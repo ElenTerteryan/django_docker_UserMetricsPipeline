@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:latest
+    volumes:
+      - mysql_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      - "DATABASE_HOST=db"
+      - "DATABASE_NAME=${MYSQL_DATABASE}"
+      - "DATABASE_USER=${MYSQL_USER}"
+      - "DATABASE_PASSWORD=${MYSQL_PASSWORD}"
+      - "DATABASE_PORT=3306"
+
+volumes:
+  mysql_data:
