@@ -15,3 +15,14 @@ This repository contains the implementation of a comprehensive data ingestion pi
 - **MySQL Database:** Leverages MySQL for efficient data storage and retrieval, integrated through the `mysqlclient` library specified in the project dependencies.
 
 
+## Project Structure
+
+- **`docker-compose.yml`**: Orchestrates the Docker containers for the application and MySQL database.
+- **`Dockerfile`**: Defines the environment setup for the Django application.
+- **`manage.py`**: Django management script for administrative tasks.
+- **`requirements.txt`**: Lists the Python dependencies required for the project.
+- **`admin.py`**: Configuration for the Django admin interface.
+- **`apps.py`**: Application configuration for your Django app.
+- **`models.py`**: Defines the database schema using Django models.
+- **`urls.py`**: URL routing configuration for the Django application.
+- **`views.py`**: Implements the logic to handle HTTP requests and responses.
