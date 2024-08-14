@@ -21,8 +21,12 @@ This repository contains the implementation of a comprehensive data ingestion pi
 - **`Dockerfile`**: Defines the environment setup for the Django application.
 - **`manage.py`**: Django management script for administrative tasks.
 - **`requirements.txt`**: Lists the Python dependencies required for the project.
+- **`settings.py`**: Configuration file for the Django project, including database settings, installed apps, middleware, and more.
+- **`urls.py`**: URL routing configuration for the Django application, mapping URLs to views.
+- **`index.html`**: Template file for rendering the user metrics, including `talked_time`, `microphone_used`, `speaker_used`, and `voice_sentiment`.
 - **`admin.py`**: Configuration for the Django admin interface.
 - **`apps.py`**: Application configuration for your Django app.
 - **`models.py`**: Defines the database schema using Django models.
-- **`urls.py`**: URL routing configuration for the Django application.
 - **`views.py`**: Implements the logic to handle HTTP requests and responses.
+
+
