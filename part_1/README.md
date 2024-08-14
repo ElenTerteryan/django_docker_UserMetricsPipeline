@@ -25,7 +25,7 @@ This repository contains the implementation of a comprehensive data ingestion pi
 - **`urls.py`**: URL routing configuration for the Django application, mapping URLs to views.
 - **`index.html`**: Template file for rendering the user metrics, including `talked_time`, `microphone_used`, `speaker_used`, and `voice_sentiment`.
 - **`admin.py`**: Configuration for the Django admin interface.
-- **`apps.py`**: Application configuration for your Django app.
+- **`apps.py`**: Application configuration for Django app.
 - **`models.py`**: Defines the database schema using Django models.
 - **`views.py`**: Implements the logic to handle HTTP requests and responses.
 
